@@ -1,0 +1,41 @@
+2025-11-05 15:56:12.038 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 15:59:45.146 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:01:02.724 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:02:28.456 | INFO     | app.main:status:16 - GET /status called
+2025-11-05 16:11:28.384 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:11:28.400 | INFO     | app.model_manager:train_model:44 - Модель iris_logreg (logistic_regression) обучена и сохранена в saved_models\iris_logreg.joblib
+2025-11-05 16:11:28.401 | INFO     | app.model_manager:delete_model:84 - Модель iris_logreg удалена.
+2025-11-05 16:14:28.039 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:15:43.688 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:15:58.818 | INFO     | app.main:status:48 - GET /status called
+2025-11-05 16:16:06.979 | INFO     | app.main:list_models:54 - GET /models called
+2025-11-05 16:17:17.441 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:17:17.445 | ERROR    | app.main:train_model:66 - Ошибка при обучении: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-11-05 16:17:19.870 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:17:19.873 | ERROR    | app.main:train_model:66 - Ошибка при обучении: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-11-05 16:18:49.852 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:18:49.855 | ERROR    | app.main:train_model:66 - Ошибка при обучении: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-11-05 16:26:07.001 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:26:11.214 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:26:11.217 | ERROR    | app.main:train_model:66 - Ошибка при обучении: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-11-05 16:27:45.862 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:27:45.868 | INFO     | app.model_manager:train_model:44 - Модель iris_logreg (logistic_regression) обучена и сохранена в saved_models\iris_logreg.joblib
+2025-11-05 16:27:46.720 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:28:37.718 | INFO     | app.main:predict_model:71 - POST /predict called for iris_logreg
+2025-11-05 16:29:29.059 | INFO     | app.main:retrain_model:82 - POST /retrain called for iris_logreg
+2025-11-05 16:29:29.062 | ERROR    | app.main:retrain_model:89 - Ошибка при переобучении: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-11-05 16:32:26.157 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:39:01.749 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:41:12.756 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-11-05 16:42:33.296 | INFO     | app.main:train_model:59 - POST /train called for iris_logreg (logistic_regression)
+2025-11-05 16:42:33.304 | INFO     | app.model_manager:train_model:44 - Модель iris_logreg (logistic_regression) обучена и сохранена в saved_models\iris_logreg.joblib
+2025-12-04 12:19:50.993 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:20:35.352 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:20:56.124 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:21:21.926 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:23:09.392 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:24:46.145 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:27:19.191 | INFO     | app.logger:<module>:12 - Logger initialized.
+2025-12-04 12:28:50.593 | INFO     | app.main:upload_file:128 - Файл Thunderstore Mod Manager - Installer.exe успешно загружен в MinIO.
+2025-12-04 12:28:53.909 | INFO     | app.main:upload_file:128 - Файл Thunderstore Mod Manager - Installer.exe успешно загружен в MinIO.
+2025-12-04 12:30:25.793 | INFO     | app.main:download_file:141 - Файл Thunderstore Mod Manager - Installer.exe скачан из MinIO.
