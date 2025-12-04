@@ -4,31 +4,19 @@ from pydantic import BaseModel as PydanticModel
 from typing import List, Optional, Dict, Any
 import pandas as pd
 import io
-
-# -----------------------------
-# Локальные импорты
-# -----------------------------
 from app.logger import logger
 from app.model_manager import ModelManager
 from app.s3_client import minio_client, BUCKET_NAME  # 👈 добавили работу с MinIO
 
-# -----------------------------
-# Инициализация приложения
-# -----------------------------
 app = FastAPI(
     title="ML Model Management API",
     description="API для обучения, хранения и предсказания ML-моделей + интеграция с MinIO",
     version="0.2.0",
 )
 
-# -----------------------------
-# Глобальный менеджер моделей
-# -----------------------------
+
 manager = ModelManager()
 
-# -----------------------------
-# Pydantic модели для запросов
-# -----------------------------
 class TrainRequest(PydanticModel):
     model_type: str
     model_name: str
@@ -49,9 +37,6 @@ class RetrainRequest(PydanticModel):
 class DeleteRequest(PydanticModel):
     model_name: str
 
-# -----------------------------
-# Эндпоинты ML API
-# -----------------------------
 @app.get("/status")
 def status():
     logger.info("GET /status called")
@@ -108,9 +93,6 @@ def delete_model(request: DeleteRequest):
         logger.error(f"Ошибка при удалении модели: {e}")
         raise HTTPException(status_code=400, detail=str(e))
 
-# -----------------------------
-# Эндпоинты работы с MinIO (S3)
-# -----------------------------
 @app.post("/upload")
 async def upload_file(file: UploadFile):
     """
